@@ -12,9 +12,9 @@ static const char *TAG = "fuck";
 #define EXAMPLE_ESP_MAXIMUM_RETRY 32
 static int s_retry_num = 0;
 
-static FUNCSTRUCT *a=NULL;
+static Wifi_ip_got_callback *a=NULL;
 
-void register_got_ip(FUNCSTRUCT * f){
+void register_got_ip(Wifi_ip_got_callback * f){
     a=f;
 }
 

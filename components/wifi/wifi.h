@@ -18,9 +18,9 @@ extern "C" {
 typedef struct {
     void (*func_name)(void);
     int tag;
-}FUNCSTRUCT;
+}Wifi_ip_got_callback;
 void wifi_init_vaca();
-void register_got_ip(FUNCSTRUCT *);
+void register_got_ip(Wifi_ip_got_callback *);
 #ifdef __cplusplus
 }
 #endif
